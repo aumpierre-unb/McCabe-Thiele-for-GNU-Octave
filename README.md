@@ -41,9 +41,9 @@ This text is divided in two main sections: The Theory and The `mccabe-thiele` To
 - refmin
 - stages
 
-### refmin
+### `refmin`
 
-refmin computes the minimum value of the reflux ratio
+`refmin` computes the minimum value of the reflux ratio
 of a distillation column, given
 a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
 a x-y matrix of the liquid and the vapor fractions,
@@ -96,9 +96,9 @@ q=0.54;
 Rmin=refmin(f,x,q)
 ```
 
-### stages
+### `stages`
 
-stages computes the number of theoretical stages
+`stages` computes the number of theoretical stages
 of a distillation column using the method of McCabe-Thiele, given
 a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
 a x-y matrix of the liquid and the vapor fractions,
