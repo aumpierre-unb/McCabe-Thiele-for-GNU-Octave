@@ -7,7 +7,7 @@
 ## Install and Load `mccabe-thiele`
 
 ```dotnetcli
-pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
+pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz
 pkg load mccabe-thiele
 ```
 
