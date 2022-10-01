@@ -33,7 +33,6 @@ function doplots(dots,updown,f,x,y,data,X,q,R)
     hold on;plot(X,Y,'m');
     hold on;plot([xF xF],[0 1],'--m');
 
-    display(x)
     if updown
         hold on;stairs(x,y,'c');
     else
