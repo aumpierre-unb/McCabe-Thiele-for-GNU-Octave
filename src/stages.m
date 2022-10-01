@@ -55,7 +55,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     #       0.8 0.942;
     #       0.9 0.974;
     #       1.  1.];
-    # x=[0.88 0.46];
+    # x=[0.88 0.46 0.11];
     # q=0.54;
     # Rmin=refmin(data,x,q)
     # R=1.70*Rmin;
@@ -72,7 +72,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # #  and plot a schematic diagram of the solution:
     #
     # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
-    # x=[0.88 0.46];
+    # x=[0.88 0.46 0.11];
     # q=0.54;
     # Rmin=refmin(f,x,q)
     # R=1.70*Rmin;
