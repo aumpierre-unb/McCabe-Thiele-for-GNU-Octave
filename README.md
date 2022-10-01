@@ -1,7 +1,6 @@
 # `mccabe-thiele` Toolbox for GNU-Octave (under construction)
-<!-- 
-[![version](https://juliahub.com/docs/InternalFluidFlow/version.svg)](https://juliahub.com/ui/Packages/InternalFluidFlow/zGZKl)
--->
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Install and Load `mccabe-thiele`
 
