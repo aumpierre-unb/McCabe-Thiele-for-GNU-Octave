@@ -25,7 +25,7 @@ The following is a very short introduction to the `mccabe-thiele` Toolbox for GN
 
 The McCabe-Thiele method is a simplified method to calculate the number of theoretical stages of equilibrium of a distillation column of a two component mixture. The method depends of three premisses: adiabatic process, constant latent heat of vaporization along the column and that the at each stage, the heat of vaporized liquid be the same as the heat of condensed vapor.
 
-This text is divided in two main sections: The Theory and The mccabe-thiele Toolbox.
+This text is divided in two main sections: The Theory and The `mccabe-thiele` Toolbox.
 
 ## The Theory
 
