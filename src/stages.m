@@ -71,7 +71,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # #  the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio,
     # #  and plot a schematic diagram of the solution:
     #
-    # f(x)=x.^1.11 .* (1-x).^1.09 + x;
+    # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46];
     # q=0.54;
     # Rmin=refmin(f,x,q)
