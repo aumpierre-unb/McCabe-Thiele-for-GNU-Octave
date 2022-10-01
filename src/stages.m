@@ -32,11 +32,9 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     #  from the stripping section to the rectifying section, updown = true.
     # If updown = false is given, theoretical stages are computed
     #  from the rectifying section to the stripping section.
-
-By default, stages plots a schematic diagram of the solution, fig = true.
-
-If fig = false is given, no plot is shown.
-
+    # By default, stages plots a schematic diagram of the solution, fig = true.
+    # If fig = false is given, no plot is shown.
+    #
     # Examples:
     # # Compute the number of theoretical stages of a distillation column
     # #  from the bottom of the column, given
