@@ -1,8 +1,4 @@
-# mccabe-thiele (Under Construction)
-<!-- 
-[![DOI](https://zenodo.org/badge/509427410.svg)](https://zenodo.org/badge/latestdoi/509427410)
--->
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# mccabe-thiele Toolbox for GNU-Octave (under construction)
 <!-- 
 [![version](https://juliahub.com/docs/InternalFluidFlow/version.svg)](https://juliahub.com/ui/Packages/InternalFluidFlow/zGZKl)
 -->
@@ -11,7 +7,7 @@
 
 ```dotnetcli
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
-pkg load McCabeThiele
+pkg load mccabe-thiele
 ```
 
 ## Citation of mccabe-thiele
@@ -25,11 +21,11 @@ For citation of the last released version of InternalFluidFlow, please check CIT
 
 ---
 
-The following is a very short introduction to the McCabeThiele Toolbox for GNU Octave.
+The following is a very short introduction to the mccabe-thiele Toolbox for GNU Octave.
 
 The McCabe-Thiele method is a simplified method to calculate the number of theoretical stages of equilibrium of a distillation column of a two component mixture. The method depends of three premisses: adiabatic process, constant latent heat of vaporization along the column and that the at each stage, the heat of vaporized liquid be the same as the heat of condensed vapor.
 
-This text is divided in two main sections: The Theory and The McCabeThiele Toolbox.
+This text is divided in two main sections: The Theory and The mccabe-thiele Toolbox.
 
 ## The Theory
 
@@ -70,7 +66,7 @@ the composition xD = 88 % of the distillate,
 the composition xF = 46 % of the feed, and
 the feed quality q = 54 %:
 
-```julia
+```dotnetcli
 data=[0.  0.;
       0.1 0.212;
       0.2 0.384;
@@ -94,7 +90,7 @@ the composition xD = 88 % of the distillate,
 the composition xF = 46 % of the feed,
 the feed quality q = 54 %:
 
-```julia
+```dotnetcli
 f(x)=x.^1.11 .* (1-x).^1.09 + x;
 x=[0.88 0.46];
 q=0.54;
@@ -138,7 +134,7 @@ the composition xF = 46 % of the feed,
 the feed quality q = 54 %, and
 the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio:
 
-```julia
+```dotnetcli
 data=[0.  0.;
       0.1 0.212;
       0.2 0.384;
@@ -167,7 +163,7 @@ the feed quality q = 54 %, and
 the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio,
 and plot a schematic diagram of the solution:
 
-```julia
+```dotnetcli
 f(x)=x.^1.11 .* (1-x).^1.09 + x;
 x=[0.88 0.46 0.11];
 q=0.54;
