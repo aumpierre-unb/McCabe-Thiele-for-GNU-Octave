@@ -1,18 +1,20 @@
-# McCabeThiele.jl (under construction)
+# mccabe-thiele (Under Construction)
 <!-- 
-[![DOI](https://zenodo.org/badge/524550191.svg)](https://zenodo.org/badge/latestdoi/524550191)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/509427410.svg)](https://zenodo.org/badge/latestdoi/509427410)
+-->
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+<!-- 
 [![version](https://juliahub.com/docs/InternalFluidFlow/version.svg)](https://juliahub.com/ui/Packages/InternalFluidFlow/zGZKl)
 -->
 
-## Install and Load McCabeThiele
+## Install and Load mccabe-thiele
 
 ```dotnetcli
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
 pkg load McCabeThiele
 ```
 
-## Citation of McCabeThiele
+## Citation of mccabe-thiele
 
 You can cite all versions (both released and pre-released), by using
 [DOI 105281/zenodo.7128962](https://doi.org/10.5281/zenodo.7128962).
@@ -37,9 +39,9 @@ This text is divided in two main sections: The Theory and The McCabeThiele Toolb
 
 ### Operation Lines
 
-## The McCabeThiele Toolbox
+## The mccabe-thiele Toolbox
 
-McCabeThiele provides the following functions:
+mccabe-thiele provides the following functions:
 
 - refmin
 - stages
@@ -173,7 +175,6 @@ Rmin=refmin(f,x,q)
 R=1.70*Rmin;
 N=stages(f,x,q,R)
 ```
-
 
 Copyright &copy; 2022 Alexandre Umpierre
 
