@@ -1,6 +1,8 @@
 # `mccabe-thiele` Toolbox for GNU-Octave (under construction)
 
+[![DOI](https://zenodo.org/badge/544044423.svg)](https://zenodo.org/badge/latestdoi/544044423)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/McCabe-Thiele-for-GNU-Octave)
 
 ## Install and Load `mccabe-thiele`
 
@@ -12,7 +14,7 @@ pkg load mccabe-thiele
 ## Citation of `mccabe-thiele`
 
 You can cite all versions (both released and pre-released), by using
-[DOI 105281/zenodo.7128962](https://doi.org/10.5281/zenodo.7128962).
+[DOI 10.5281/zenodo.7133683](https://doi.org/10.5281/zenodo.7133683).
 
 This DOI represents all versions, and will always resolve to the latest one.
 
