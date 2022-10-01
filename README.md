@@ -1,27 +1,27 @@
-# mccabe-thiele Toolbox for GNU-Octave (under construction)
+# `mccabe-thiele` Toolbox for GNU-Octave (under construction)
 <!-- 
 [![version](https://juliahub.com/docs/InternalFluidFlow/version.svg)](https://juliahub.com/ui/Packages/InternalFluidFlow/zGZKl)
 -->
 
-## Install and Load mccabe-thiele
+## Install and Load `mccabe-thiele`
 
 ```dotnetcli
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
 pkg load mccabe-thiele
 ```
 
-## Citation of mccabe-thiele
+## Citation of `mccabe-thiele`
 
 You can cite all versions (both released and pre-released), by using
 [DOI 105281/zenodo.7128962](https://doi.org/10.5281/zenodo.7128962).
 
 This DOI represents all versions, and will always resolve to the latest one.
 
-For citation of the last released version of InternalFluidFlow, please check CITATION file at the [maintainer's repository](https://github.com/aumpierre-unb/McCabeThiele.jl).
+For citation of the last released version of `mccabe-thiele`, please check CITATION file at the [maintainer's repository](https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave).
 
 ---
 
-The following is a very short introduction to the mccabe-thiele Toolbox for GNU Octave.
+The following is a very short introduction to the `mccabe-thiele` Toolbox for GNU Octave.
 
 The McCabe-Thiele method is a simplified method to calculate the number of theoretical stages of equilibrium of a distillation column of a two component mixture. The method depends of three premisses: adiabatic process, constant latent heat of vaporization along the column and that the at each stage, the heat of vaporized liquid be the same as the heat of condensed vapor.
 
