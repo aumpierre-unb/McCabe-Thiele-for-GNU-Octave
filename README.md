@@ -35,9 +35,9 @@ This text is divided in two main sections: The Theory and The mccabe-thiele Tool
 
 ### Operation Lines
 
-## The mccabe-thiele Toolbox
+## The `mccabe-thiele` Toolbox
 
-mccabe-thiele provides the following functions:
+`mccabe-thiele` provides the following functions:
 
 - refmin
 - stages
