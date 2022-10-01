@@ -1,4 +1,86 @@
-function N=stages(data,X,q,R,updown=true,fig=true)
+# Copyright (C) 2022 Alexandre Umpierre
+#
+# This file is part of Internal Fluid Flow Toolbox.
+# Internal Fluid Flow Toolbox is free software:
+# you can redistribute it and/or modify it under the terms
+# of the GNU General Public License (GPL) version 3
+# as published by the Free Software Foundation.
+#
+# Internal Fluid Flow Toolbox is distributed in the hope
+# that it will be useful, but WITHOUT ANY WARRANTY;
+# without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the
+# GNU General Public License along with this program
+# (license GNU GPLv3.txt).
+# It is also available at https://www.gnu.org/licenses/.
+
+function [N]=stages(data,X,q,R,updown=true,fig=true)
+    # Syntax:
+    # [N]=stages(data,X,q,R[,updown[,fig]])
+    #
+    # stages computes the number of theoretical stages
+    #  of a distillation column using the method of McCabe-Thiele, given
+    #  a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
+    #  a x-y matrix of the liquid and the vapor fractions,
+    #  the vector of the fractions of the products and the feed,
+    #  the feed quality q, and
+    #  the reflux ratio R at the top of the column.
+    # By default, theoretical stages are computed
+    #  from the stripping section to the rectifying section, updown = true.
+    # If updown = false is given, theoretical stages are computed
+    #  from the rectifying section to the stripping section.
+
+By default, stages plots a schematic diagram of the solution, fig = true.
+
+If fig = false is given, no plot is shown.
+
+    # Examples:
+    # # Compute the number of theoretical stages of a distillation column
+    # #  from the bottom of the column, given
+    # #  a matrix that relates the liquid fraction and the vapor fraction,
+    # #  the composition xB = 11 % of the column's bottom,
+    # #  the composition xD = 88 % of the distillate,
+    # #  the composition xF = 46 % of the feed,
+    # #  the feed quality q = 54 %, and
+    # #  the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio:
+    # data=[0.  0.;
+    #       0.1 0.212;
+    #       0.2 0.384;
+    #       0.3 0.529;
+    #       0.4 0.651;
+    #       0.5 0.752;
+    #       0.6 0.833;
+    #       0.7 0.895;
+    #       0.8 0.942;
+    #       0.9 0.974;
+    #       1.  1.];
+    # x=[0.88 0.46];
+    # q=0.54;
+    # Rmin=refmin(data,x,q)
+    # R=1.70*Rmin;
+    # N=stages(data,x,q,R,false,false)
+    #
+    # # Compute the number of theoretical stages of a distillation column
+    # #  from the top of the column, given
+    # #  the function that compute the vapor fraction given the liquid fraction,
+    # #  the composition xB = 11 % of the column's bottom,
+    # #  the composition xD = 88 % of the distillate,
+    # #  the composition xF = 46 % of the feed,
+    # #  the feed quality q = 54 %, and
+    # #  the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio,
+    # #  and plot a schematic diagram of the solution:
+    #
+    # f(x)=x.^1.11 .* (1-x).^1.09 + x;
+    # x=[0.88 0.46];
+    # q=0.54;
+    # Rmin=refmin(f,x,q)
+    # R=1.70*Rmin;
+    # N=stages(f,x,q,R)
+    #
+    # See also: refmin.
     try
       data(0.5);
       f=@(x) data(x);
@@ -24,32 +106,3 @@ function N=stages(data,X,q,R,updown=true,fig=true)
         doplots(dots,updown,f,x,y,data,X,q,R);
     end
 end
-
-#{
-data=@(x) (x.^0.9.*(1-x).^1.08+x);
-x=[0.88 0.55 0.11];
-q=0.54;
-Rmin=refmin(data,x,q)
-R=2*Rmin;
-N=stages(data,x,q,R,false,false)
-#}
-
-#{
-data=[0.  0.;
-      0.1 0.212;
-      0.2 0.384;
-      0.3 0.529;
-      0.4 0.651;
-      0.5 0.752;
-      0.6 0.833;
-      0.7 0.895;
-      0.8 0.942;
-      0.9 0.974;
-      1.  1.];
-x=[0.88 0.55 0.11];
-q=0.54;
-Rmin=refmin(data,x,q)
-R=2*Rmin;
-N=stages(data,x,q,R)
-#}
-
