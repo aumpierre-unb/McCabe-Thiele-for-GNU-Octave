@@ -5,42 +5,11 @@
 [![version](https://juliahub.com/docs/InternalFluidFlow/version.svg)](https://juliahub.com/ui/Packages/InternalFluidFlow/zGZKl)
 -->
 
-## Installing and Loading McCabeThiele
-<!-- 
-McCabeThiele can be installed and loaded either
-from the JuliaHub repository (last released version) or from the
-[maintainer's repository](https://github.com/aumpierre-unb/McCabeThiele.jl).
--->
+## Install and Load McCabeThiele
 
-### Last Released Version of McCabeThiele (not yet released)
-
-<!--
-The last version of McCabeThiele can be installed from JuliaHub repository:
-
-```julia
-using Pkg
-Pkg.add("McCabeThiele")
-using McCabeThiele
-```
-
-If McCabeThiele is already installed, it can be updated:
-
-```julia
-using Pkg
-Pkg.update("McCabeThiele")
-using McCabeThiele
-```
--->
-
-### Pre-Release Version (Under Construction)
-
-The next version (under construction) of McCabeThiele
-can be installed from the [maintainer's repository](https://github.com/aumpierre-unb/McCabeThiele.jl).
-
-```julia
-using Pkg
-Pkg.add(path="https://github.com/aumpierre-unb/McCabeThiele.jl")
-using McCabeThiele
+```dotnetcli
+pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
+pkg load McCabeThiele
 ```
 
 ## Citation of McCabeThiele
@@ -52,7 +21,23 @@ This DOI represents all versions, and will always resolve to the latest one.
 
 For citation of the last released version of InternalFluidFlow, please check CITATION file at the [maintainer's repository](https://github.com/aumpierre-unb/McCabeThiele.jl).
 
-## The McCabeThiele Module for Julia
+---
+
+The following is a very short introduction to the McCabeThiele Toolbox for GNU Octave.
+
+The McCabe-Thiele method is a simplified method to calculate the number of theoretical stages of equilibrium of a distillation column of a two component mixture. The method depends of three premisses: adiabatic process, constant latent heat of vaporization along the column and that the at each stage, the heat of vaporized liquid be the same as the heat of condensed vapor.
+
+This text is divided in two main sections: The Theory and The McCabeThiele Toolbox.
+
+## The Theory
+
+### Stages of Equilibrium
+
+### The Feed Line
+
+### Operation Lines
+
+## The McCabeThiele Toolbox
 
 McCabeThiele provides the following functions:
 
