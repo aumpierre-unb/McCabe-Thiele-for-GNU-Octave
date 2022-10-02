@@ -1,8 +1,16 @@
 TODO
 ====
 
+mccabe-thiele 0.1.2-alpha
+======================================
+* Minor changes in documentation
+
 mccabe-thiele 0.1.1 (2022-10-01)
 ======================================
 * Minor changes in documentation
 * First release
 * Package under construction
+
+mccabe-thiele 0.1.0
+======================================
+* Unreleased
