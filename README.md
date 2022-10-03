@@ -7,7 +7,7 @@
 ## Installing and Loading `mccabe-thiele`
 
 ```dotnetcli
-# use this call install version 0.1.1, or modify the command line for match the version
+# use this call to install version 0.1.1, or modify the command line for match the version
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.1.tar.gz
 pkg load mccabe-thiele
 ```
