@@ -66,12 +66,10 @@ function [R]=refmin(data,X,q)
     try
       data(0.5);
       f=@(x) data(x);
-    catch
     end
     try
       data+1;
       f=@(x) interp1(data(:,1),data(:,2),x);
-    catch
     end
     xD=X(1);
     xF=X(2);

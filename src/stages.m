@@ -83,13 +83,11 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
       data(0.5);
       f=@(x) data(x);
       dots=false;
-    catch
     end
     try
       data+1;
       f=@(x) interp1(data(:,1),data(:,2),x);
       dots=true;
-    catch
     end
     xD=X(1);
     xF=X(2);
