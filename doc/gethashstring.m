@@ -18,4 +18,3 @@ urlwrite(url,file)
 hash("sha256",fileread(file))
 
 ## 6) Copy and paste hash string under quotes to .yaml file
-
