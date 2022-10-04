@@ -31,9 +31,9 @@ This text is divided in two main sections: The Theory and The `mccabe-thiele` To
 
 The McCabe-Thiele method is a simplified method to calculate the number of theoretical stages of equilibrium of a distillation column for a two component mixture. The method depends of three premisses:
 
-- adiabatic process,
-- constant latent heat of vaporization along the column, and
-- that the at each stage, the heat of vaporized liquid be the same as the heat of condensed vapor.
+- components have the same molar heats of vaporization,
+- for every mole of liquid vaporized, a mole of vapor is condensed, and
+- heat effects are negligible.
 
 Distillation is a unit operation based on the difference of volatility to separate different chemical species of a mixture and on gravity to separate vapor and liquid streams. There are several types of distillation.
 
