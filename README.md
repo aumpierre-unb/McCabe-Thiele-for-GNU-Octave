@@ -47,10 +47,10 @@ An equilibrium stage is an abstract control volume such that the effluent curren
 
 ### The Feed Line
 
-Idealy, the feed current separates into a liquid stream *q* and a vapor stream 1-*q* in equilibrium at the thermodynamic conditions (pressure and temperature) of the feed stage, where *q* is the liquid fraction of the feed. If *x*, *y* and *x*<sub>*F*</sub> are the compositions of the liquid and the vapor streams in thermodynamic equilibrium and the feed, respectively, then the material balance is
+Idealy, the feed current separates into a liquid stream *q* and a vapor stream 1-*q*, where *q* is the liquid fraction of the feed. If *x*<sub>*n*+1</sub>, *y*<sub>*n*</sub> and *x*<sub>*F*</sub> are the compositions of the liquid and the vapor streams, respectively, then the material balance is
 
 $$
-(1 - q)\ y_n + q\ x_{n=1} = x_F
+(1 - q)\ y_n + q\ x_{n+1} = x_F
 $$
 
 or
