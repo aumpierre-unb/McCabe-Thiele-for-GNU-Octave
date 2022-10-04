@@ -43,7 +43,7 @@ The McCabe-Thiele method is a simplifyied method to calculate the number of stag
 
 ### Stages of Equilibrium
 
-A stage equilibrium is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operatations are based on the concept of satge of equilibrium.
+An equilibrium stage is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operatations are based on the concept of satge of equilibrium.
 
 ### The Feed Line
 
