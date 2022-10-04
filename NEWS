@@ -1,9 +1,11 @@
 TODO
 ====
 
-mccabe-thiele 0.1.2-alpha
+mccabe-thiele 0.1.2-alpha (2022-10-08)
 ======================================
-* Minor changes in documentation
+* Major changes on documentation and functions
+* Function qR2S included
+* Exception for saturated liquid feed resolved
 
 mccabe-thiele 0.1.1 (2022-10-01)
 ======================================

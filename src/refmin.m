@@ -26,7 +26,9 @@ function [R]=refmin(data,X,q)
     #  a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
     #  a x-y matrix of the liquid and the vapor fractions,
     #  the vector of the fractions of the distillate and the feed, and
-    #  the feed quality q.
+    #  the feed quality.
+    # If feed is a saturated liquid, feed quality q = 1,
+    #  feed quality is reset to q = 1 - eps.
     #
     # Examples:
     # # Compute the minimum value of the reflux ratio
@@ -48,7 +50,7 @@ function [R]=refmin(data,X,q)
     #       1.  1.];
     # x=[0.88 0.46];
     # q=0.54;
-    # Rmin=refmin(data,x,q)
+    # r=refmin(data,x,q)
     #
     # # Compute the number of theoretical stages of a distillation column
     # # from the top of the column, given
@@ -60,16 +62,19 @@ function [R]=refmin(data,X,q)
     # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46];
     # q=0.54;
-    # Rmin=refmin(f,x,q)
+    # r=refmin(f,x,q)
     #
-    # See also: stages.
+    # See also: stages, qR2S.
+    if q==1 q=1-eps end
     try
       data(0.5);
       f=@(x) data(x);
+    catch
     end
     try
       data+1;
       f=@(x) interp1(data(:,1),data(:,2),x);
+    catch
     end
     xD=X(1);
     xF=X(2);
