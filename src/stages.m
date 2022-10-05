@@ -43,7 +43,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # # Compute the number of theoretical stages of a distillation column
     # #  from the bottom of the column, given
     # #  a matrix that relates the liquid fraction and the vapor fraction,
-    # #  the composition xB = 11 % of the column's bottom,
+    # #  the composition xB = 11 % of the column's bottom product,
     # #  the composition xD = 88 % of the distillate,
     # #  the composition xF = 46 % of the feed,
     # #  the feed quality q = 54 %, and
@@ -69,7 +69,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # # Compute the number of theoretical stages of a distillation column
     # #  from the top of the column, given
     # #  the function that compute the vapor fraction given the liquid fraction,
-    # #  the composition xB = 11 % of the column's bottom,
+    # #  the composition xB = 11 % of the column's bottom product,
     # #  the composition xD = 88 % of the distillate,
     # #  the composition xF = 46 % of the feed,
     # #  the feed quality q = 54 %, and
