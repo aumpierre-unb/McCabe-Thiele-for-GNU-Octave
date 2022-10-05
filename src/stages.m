@@ -24,7 +24,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     #
     # stages computes the number of theoretical stages
     #  of a distillation column using the method of McCabe-Thiele, given
-    #  a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
+    #  a function y = y(x) that relates the liquid fraction x and the vapor fraction y, or
     #  a x-y matrix of the liquid and the vapor fractions,
     #  the vector of the fractions of the products and the feed,
     #  the feed quality, and
@@ -76,12 +76,12 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # #  the reflux ratio R at the top of the column
     # #  70 % higher that the minimum reflux ratio r
     # #  and plot a schematic diagram of the solution:
-    # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
+    # y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46 0.11];
     # q=0.54;
-    # r=refmin(f,x,q)
+    # r=refmin(y,x,q)
     # R=1.70*r;
-    # N=stages(f,x,q,R)
+    # N=stages(y,x,q,R)
     #
     # See also: refmin, qR2S.
     if q==1 q=1-1e-10 end

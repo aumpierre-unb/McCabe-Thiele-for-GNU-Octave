@@ -24,7 +24,7 @@ function [R]=refmin(data,X,q)
     #
     # refmin computes the minimum value of the reflux ratio
     #  of a distillation column, given
-    #  a function y = f(x) that relates the liquid fraction x and the vapor fraction y, or
+    #  a function y = y(x) that relates the liquid fraction x and the vapor fraction y, or
     #  a x-y matrix of the liquid and the vapor fractions,
     #  the vector of the fractions of the distillate and the feed, and
     #  the feed quality.
@@ -60,10 +60,10 @@ function [R]=refmin(data,X,q)
     # # the composition xD = 88 % of the distillate,
     # # the composition xF = 46 % of the feed,
     # # the feed quality q = 54 %:
-    # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
+    # y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46];
     # q=0.54;
-    # r=refmin(f,x,q)
+    # r=refmin(y,x,q)
     #
     # See also: stages, qR2S.
     if q==1 q=1-1e-10 end
