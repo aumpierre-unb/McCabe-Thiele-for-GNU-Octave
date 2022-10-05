@@ -147,7 +147,7 @@ from the bottom of the column, given
 a matrix that relates the liquid fraction and the vapor fraction,
 the composition *x*<sub>*B*</sub> = 11 % of the column's bottom product,
 the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed,
+the composition *x*<sub>*F*</sub> = 46 % of the feed,
 the feed quality *q* = 54 %, and
 the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio:
 
@@ -175,7 +175,7 @@ from the top of the column, given
 the function that compute the vapor fraction given the liquid fraction,
 the composition *x*<sub>*B*</sub> = 11 % of the column's bottom product,
 the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed,
+the composition *x*<sub>*F*</sub> = 46 % of the feed,
 the feed quality *q* = 54 %, and
 the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio,
 and plot a schematic diagram of the solution:
