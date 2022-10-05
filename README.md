@@ -212,9 +212,9 @@ R=refmin(f,X,q)
 Compute the minimum value of the reflux ratio
 of a distillation column, given
 a matrix that relates the liquid fraction and the vapor fraction,
-the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed, and
-the feed quality *q* = 54 %:
+the composition of the distillate is 88 %,
+the composition of the feed is 46 %,
+the feed quality is 54 %:
 
 ```dotnetcli
 data=[0.  0.;
@@ -236,9 +236,9 @@ Rmin=refmin(data,x,q)
 Compute the number of theoretical stages of a distillation column
 from the top of the column, given
 the function that compute the vapor fraction given the liquid fraction,
-the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed,
-the feed quality *q* = 54 %:
+the composition of the distillate is 88 %,
+the composition of the feed is 46 %,
+the feed quality is 54 %:
 
 ```dotnetcli
 y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
@@ -268,9 +268,9 @@ R=refmin(f,X,q)
 Compute the minimum value of the reflux ratio
 of a distillation column, given
 a matrix that relates the liquid fraction and the vapor fraction,
-the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed, and
-the feed quality *q* = 54 %:
+the composition of the distillate is 88 %,
+the composition of the feed is 46 %,
+the feed quality is 54 %:
 
 ```dotnetcli
 data=[0.  0.;
@@ -292,9 +292,9 @@ Rmin=refmin(data,x,q)
 Compute the number of theoretical stages of a distillation column
 from the top of the column, given
 the function that compute the vapor fraction given the liquid fraction,
-the composition *x*<sub>*D*</sub> = 88 % of the distillate,
-the composition *x*<sub>*y*</sub> = 46 % of the feed,
-the feed quality *q* = 54 %:
+the composition of the distillate is 88 %,
+the composition of the feed is 46 %,
+the feed quality is 54 %:
 
 ```dotnetcli
 y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
