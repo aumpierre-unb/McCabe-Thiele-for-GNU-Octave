@@ -19,6 +19,7 @@
 
 function [S]=qR2S(R,X,q)
     # Syntax:
+    #
     # [S]=qR2S(R,X,q)
     #
     # qR2S computes the reflux ratio at the bottom of the column, given
@@ -26,9 +27,10 @@ function [S]=qR2S(R,X,q)
     #  the vector of the fractions of the products and the feed, and
     #  the feed quality.
     # If feed is a saturated liquid, feed quality q = 1,
-    #  feed quality is reset to q = 1 - eps.
+    #  feed quality is reset to q = 1 - 1e-10.
     #
     # Examples:
+    #
     # # Compute the reflux ratio at the bottom of the column, given
     # # the reflux ratio R = 2 at the top of the column,
     # # the composition xB = 11 % of the column's bottom,
@@ -41,7 +43,7 @@ function [S]=qR2S(R,X,q)
     # S=qR2S(R,x,q)
     #
     # See also: stages, refmin.
-    if q==1 q=1-eps end
+    if q==1 q=1-1e-10 end
     xD=X(1);
     xF=X(2);
     xB=X(3);

@@ -19,6 +19,7 @@
 
 function [N]=stages(data,X,q,R,updown=true,fig=true)
     # Syntax:
+    #
     # [N]=stages(data,X,q,R[,updown[,fig]])
     #
     # stages computes the number of theoretical stages
@@ -29,7 +30,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     #  the feed quality, and
     #  the reflux ratio at the top of the column.
     # If feed is a saturated liquid, feed quality q = 1,
-    #  feed quality is reset to q = 1 - eps.
+    #  feed quality is reset to q = 1 - 1e-10.
     # By default, theoretical stages are computed
     #  from the stripping section to the rectifying section, updown = true.
     # If updown = false is given, theoretical stages are computed
@@ -38,6 +39,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # If fig = false is given, no plot is shown.
     #
     # Examples:
+    #
     # # Compute the number of theoretical stages of a distillation column
     # #  from the bottom of the column, given
     # #  a matrix that relates the liquid fraction and the vapor fraction,
@@ -74,7 +76,6 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # #  the reflux ratio R at the top of the column
     # #  70 % higher that the minimum reflux ratio r
     # #  and plot a schematic diagram of the solution:
-    #
     # f=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46 0.11];
     # q=0.54;
@@ -83,7 +84,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # N=stages(f,x,q,R)
     #
     # See also: refmin, qR2S.
-    if q==1 q=1-eps end
+    if q==1 q=1-1e-10 end
     try
       data(0.5);
       f=@(x) data(x);

@@ -48,8 +48,10 @@ function doplots(dots,updown,f,x,y,data,X,q,R)
     hold on;plot(X,Y,'r');
     hold on;plot([xB xB],[0 1],'--r');
 
-    Y=q/(q-1)*X-xF/(q-1);
-    hold on;plot(X,Y,'m');
+    if q~=1-1e-10
+        Y=q/(q-1)*X-xF/(q-1);
+        hold on;plot(X,Y,'m');
+    end
     hold on;plot([xF xF],[0 1],'--m');
 
     if updown
