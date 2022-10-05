@@ -25,8 +25,8 @@ maintainers:
   contact: "aumpierre@gmail.com"
 versions:
 - id: "0.1.2"
-  date: "2022-10-08"
-  sha256: "xxxxxxxxxxxxxxxxx"
+  date: "2022-10-05"
+  sha256: "e6016fbd6b9c99eab45d2be3e0a7e6f1de2b5795958eb83b3699fa7109f2cde0"
   url: "https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz"
   depends:
   - "octave (>= 4.0.0)"

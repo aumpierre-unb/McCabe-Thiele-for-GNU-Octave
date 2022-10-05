@@ -1,7 +1,7 @@
 # Generate hash string sha256 for .yaml file:
 
 ## 1) Release version on Github under a tag, e.g.
-tag="v0.2.1"
+tag="v0.1.2"
 
 ## 2) Get the address of .tar.gz:
 url=["https://github.com/aumpierre-unb/" ...
