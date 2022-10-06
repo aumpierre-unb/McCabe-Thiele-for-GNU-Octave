@@ -69,8 +69,7 @@ function [R]=refmin(data,X,q)
     xD=X(1);
     xF=X(2);
     if xD<xF
-      printf("Inconsistent feed and products compositions.")
-      return
+      error("Inconsistent feed and/or products compositions.")
     end
     if q==1 q=1-1e-10 end
     try
