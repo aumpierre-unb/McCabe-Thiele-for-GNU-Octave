@@ -83,7 +83,7 @@ $$
 D\ x_D = V_n\ y_n - L_{n+1}\ x_{n+1}
 $$
 
-The ratio between the distillate *D* and the refluxing current *L*<sub>*n*+1</sub> is the reflux ratio at the top of the column,
+The ratio between the distillate *D* and the refluxing current *L*<sub>*N*+1</sub> is the reflux ratio at the top of the column,
 
 $$
 R = {L_{N+1} \over D}
