@@ -149,7 +149,8 @@ the composition of the distillate is 88 %,
 the composition of the feed is 46 %,
 the composition of the column's bottom product is 11 %,
 the feed quality is 54 %, and
-the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio:
+the reflux ratio R at the top of the column is
+70 % higher than the minimum reflux ratio:
 
 ```dotnetcli
 data=[0.  0.;
@@ -165,7 +166,7 @@ data=[0.  0.;
       1.  1.];
 x=[0.88 0.46 0.11];
 q=0.54;
-r=refmin(data,x,q)
+r=refmin(data,x,q);
 R=1.70*r;
 N=stages(data,x,q,R,false,false)
 ```
@@ -176,15 +177,16 @@ the function that compute the vapor fraction given the liquid fraction,
 the composition of the distillate is 88 %,
 the composition of the feed is 46 %,
 the composition of the column's bottom product is 11 %,
-the feed quality is 54 %, and
-the reflux ratio at the top of the column 70 % higher that the minimum reflux ratio,
+the feed is saturated liquid, and
+the reflux ratio R at the top of the column is
+70 % higher than the minimum reflux ratio,
 and plot a schematic diagram of the solution:
 
 ```dotnetcli
 y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
 x=[0.88 0.46 0.11];
-q=0.54;
-r=refmin(y,x,q)
+q=1;
+r=refmin(y,x,q);
 R=1.70*r;
 N=stages(y,x,q,R)
 ```
@@ -238,7 +240,7 @@ from the top of the column, given
 the function that compute the vapor fraction given the liquid fraction,
 the composition of the distillate is 88 %,
 the composition of the feed is 46 %,
-the feed quality is 54 %:
+the feed is saturated liquid:
 
 ```dotnetcli
 y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
@@ -266,16 +268,34 @@ feed quality is reset to *q* = 1 - 1e-10.
 **Examples:**
 
 Compute the reflux ratio at the bottom of the column, given
-the reflux ratio at the top of the column is 2,
-the composition of the column's bottom product is 11 %,
 the composition of the distillate is 88 %,
 the composition of the feed is 46 %,
-the feed quality is 54 %:
+the composition of the column's bottom product is 11 %,
+the feed quality is 54 %, and
+the reflux ratio R at the top of the column is
+70 % higher than the minimum reflux ratio:
 
 ```dotnetcli
-R=2;
 x=[0.88 0.46 0.11];
 q=0.54;
+r=refmin(data,x,q);
+R=1.70*r;
+S=qR2S(R,x,q)
+```
+
+Compute the reflux ratio at the bottom of the column, given
+the composition of the distillate is 88 %,
+the composition of the feed is 46 %,
+the composition of the column's bottom product is 11 %,
+the feed is saturated liquid, and
+the reflux ratio R at the top of the column is
+70 % higher than the minimum reflux ratio:
+
+```dotnetcli
+x=[0.88 0.46 0.11];
+q=1;
+r=refmin(data,x,q);
+R=1.70*r;
 S=qR2S(R,x,q)
 ```
 

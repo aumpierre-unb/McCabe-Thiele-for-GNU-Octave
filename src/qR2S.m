@@ -40,7 +40,8 @@ function [S]=qR2S(X,q,R)
     # # 70 % higher that the minimum reflux ratio.
     # x=[0.88 0.46 0.11];
     # q=0.54;
-    # R=2;
+    # r=refmin(data,x,q);
+    # R=1.70*r;
     # S=qR2S(x,q,R)
     #
     # # Compute the reflux ratio at the bottom of the column, given
@@ -49,11 +50,11 @@ function [S]=qR2S(X,q,R)
     # # the composition of the column's bottom product is 11 %,
     # # the feed is saturated liquid, and
     # # the reflux ratio R at the top of the column is
-    # # 40 % higher that the minimum reflux ratio.
+    # # 70 % higher that the minimum reflux ratio.
     # x=[0.88 0.46 0.11];
-    # q=0.54;
-    # r=refmin(data,x,q)
-    # R=1.40*r;
+    # q=1;
+    # r=refmin(data,x,q);
+    # R=1.70*r;
     # S=qR2S(x,q,R)
     #
     # See also: stages, refmin.

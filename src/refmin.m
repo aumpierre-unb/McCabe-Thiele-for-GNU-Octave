@@ -59,10 +59,10 @@ function [R]=refmin(data,X,q)
     # # the function that compute the vapor fraction given the liquid fraction,
     # #  the composition of the distillate is 88 %,
     # #  the composition of the feed is 46 %,
-    # #  the feed quality is 54 %:
+    # #  the feed is saturated liquid:
     # y=@(x) (x.^1.11 .* (1-x).^1.09 + x);
     # x=[0.88 0.46];
-    # q=0.54;
+    # q=1;
     # r=refmin(y,x,q)
     #
     # See also: stages, qR2S.
