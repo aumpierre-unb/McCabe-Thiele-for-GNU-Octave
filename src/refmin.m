@@ -66,6 +66,12 @@ function [R]=refmin(data,X,q)
     # r=refmin(y,x,q)
     #
     # See also: stages, qR2S.
+    xD=X(1);
+    xF=X(2);
+    if xD<xF || xB>xF
+      printf("Inconsistent feed and products compositions.")
+      return
+    end
     if q==1 q=1-1e-10 end
     try
       data(0.5);
@@ -77,8 +83,6 @@ function [R]=refmin(data,X,q)
       f=@(x) interp1(data(:,1),data(:,2),x);
     catch
     end
-    xD=X(1);
-    xF=X(2);
     foo=@(x) (f(x)-(q/(q-1)*x-xF/(q-1)));
     xi=bissection(foo,0,1);
     yi=q/(q-1)*xi-xF/(q-1);
