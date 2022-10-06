@@ -17,10 +17,10 @@
 # (license GNU GPLv3.txt).
 # It is also available at https://www.gnu.org/licenses/.
 
-function [S]=qR2S(R,X,q)
+function [S]=qR2S(X,q,R)
     # Syntax:
     #
-    # [S]=qR2S(R,X,q)
+    # [S]=qR2S(X,q,R)
     #
     # qR2S computes the reflux ratio at the bottom of the column, given
     #  the reflux ratio at the top of the column,
@@ -32,15 +32,29 @@ function [S]=qR2S(R,X,q)
     # Examples:
     #
     # # Compute the reflux ratio at the bottom of the column, given
-    # # the reflux ratio at the top of the column is 2,
-    # # the composition of the column's bottom product is 11 %,
     # # the composition of the distillate is 88 %,
     # # the composition of the feed is 46 %,
-    # # the feed quality is 54 %:
-    # R=2;
+    # # the composition of the column's bottom product is 11 %,
+    # # the feed quality is 54 %, and
+    # # the reflux ratio R at the top of the column is
+    # # 70 % higher that the minimum reflux ratio.
     # x=[0.88 0.46 0.11];
     # q=0.54;
-    # S=qR2S(R,x,q)
+    # R=2;
+    # S=qR2S(x,q,R)
+    #
+    # # Compute the reflux ratio at the bottom of the column, given
+    # # the composition of the distillate is 88 %,
+    # # the composition of the feed is 46 %,
+    # # the composition of the column's bottom product is 11 %,
+    # # the feed is saturated liquid, and
+    # # the reflux ratio R at the top of the column is
+    # # 40 % higher that the minimum reflux ratio.
+    # x=[0.88 0.46 0.11];
+    # q=0.54;
+    # r=refmin(data,x,q)
+    # R=1.40*r;
+    # S=qR2S(x,q,R)
     #
     # See also: stages, refmin.
     if q==1 q=1-1e-10 end
