@@ -86,7 +86,7 @@ $$
 The ratio between the distillate *D* and the refluxing current *L*<sub>*n*+1</sub> is the reflux ratio at the top of the column,
 
 $$
-R = {L_{n+1} \over D}
+R = {L_{N+1} \over D}
 $$
 
 Now, introducing the reflux ratio in the specific material balance of the rectifying section, we have
