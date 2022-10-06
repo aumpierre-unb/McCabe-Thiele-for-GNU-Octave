@@ -1,21 +1,6 @@
-Cite this version as
-Alexandre Umpierre. (2022). 
-aumpierre-unb/McCabe-Thiele-for-GNU-Octave: Internal Fluid Flow Toolbox 0.1.2 (v0.1.2). 
-Zenodo. https://doi.org/10.5281/zenodo.7150184
-
-You can cite all versions by using the 
-DOI 10.5281/zenodo.7133683. 
+You can cite all versions (including pre-release version) by using the
+DOI 10.5281/zenodo.7133683.
 This DOI represents all versions, and will always resolve to the latest one.
 
-BibTeX Export
-@software{alexandre_umpierre_2022_7150184,
-  author       = {Alexandre Umpierre},
-  title        = {{aumpierre-unb/McCabe-Thiele-for-GNU-Octave: 
-                   McCabe-Thiele Toolbox 0.1.2}},
-  month        = oct,
-  year         = 2022,
-  publisher    = {Zenodo},
-  version      = {v0.2.0},
-  doi          = {10.5281/zenodo.7150184},
-  url          = {https://doi.org/10.5281/zenodo.7150184}
-}
+To cite the last released version, please check
+https://zenodo.org/account/settings/github/repository/aumpierre-unb/McCabe-Thiele-for-GNU-Octave.
