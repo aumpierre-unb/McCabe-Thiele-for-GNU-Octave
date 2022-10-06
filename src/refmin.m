@@ -68,7 +68,7 @@ function [R]=refmin(data,X,q)
     # See also: stages, qR2S.
     xD=X(1);
     xF=X(2);
-    if xD<xF || xB>xF
+    if xD<xF
       printf("Inconsistent feed and products compositions.")
       return
     end

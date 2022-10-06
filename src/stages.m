@@ -88,12 +88,10 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     xF=X(2);
     xB=X(3);
     if xD<xF || xB>xF
-      printf("Inconsistent feed and products compositions.")
-      return
+      error("Inconsistent feed and/or products compositions.")
     end
     if R<=refmin(data,X,q)
-      printf("Minimum reflux ratio exceeded.")
-      return
+      error("Minimum reflux ratio exceeded.")
     end
     if q==1 q=1-1e-10 end
     try
