@@ -71,16 +71,16 @@ function [R]=refmin(data,X,q)
     if xD<xF
       error("Inconsistent feed and/or products compositions.")
     end
-    if q==1 q=1-1e-10 end
+    if q==1
+        q=1-1e-10;
+    end
     try
       data(0.5);
       f=@(x) data(x);
-    catch
     end
     try
       data+1;
       f=@(x) interp1(data(:,1),data(:,2),x);
-    catch
     end
     foo=@(x) (f(x)-(q/(q-1)*x-xF/(q-1)));
     xi=bissection(foo,0,1);

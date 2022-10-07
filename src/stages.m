@@ -90,7 +90,9 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     if xD<xF || xB>xF
       error("Inconsistent feed and/or products compositions.")
     end
-    if q==1 q=1-1e-10 end
+    if q==1
+        q=1-1e-10;
+    end
     if R<=refmin(data,X,q)
       error("Minimum reflux ratio exceeded.")
     end
@@ -98,13 +100,11 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
       data(0.5);
       f=@(x) data(x);
       dots=false;
-    catch
     end
     try
       data+1;
       f=@(x) interp1(data(:,1),data(:,2),x);
       dots=true;
-    catch
     end
     xi=(xD/(R+1)+xF/(q-1))/(q/(q-1)-R/(R+1));
     yi=q/(q-1)*xi-xF/(q-1);
