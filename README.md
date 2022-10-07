@@ -115,9 +115,9 @@ where *B* = *F* - *D* is the column's bottom product stream. It is also possible
 
 `mccabe-thiele` provides the following functions:
 
-- stages
-- refmin
-- qR2S
+- `stages`
+- `refmin`
+- `qR2S`
 
 ### `stages`
 
