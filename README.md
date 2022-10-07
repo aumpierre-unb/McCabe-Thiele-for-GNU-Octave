@@ -103,7 +103,7 @@ Notice that *y*<sub>*n*+1</sub> = *x*<sub>*D*</sub> for *x*<sub>*n*</sub> = *x*<
 
 One can apply the very same procedure to find the operation line for the stripping section based on the reflux ratio at the bottom of the column, and find that *y*<sub>*n*+1</sub> = *x*<sub>*B*</sub> for *x*<sub>*n*</sub> = *x*<sub>*B*</sub> and that both operation lines and the feed line have a common interception.
 
-It means that given the compositions of the feed and the products, the feed quality and the reflux ratio at the top of the column, the reflux ratio at the bottom of the column can be calculated,
+It means that given the compositions of the feed and the products, the feed quality and the reflux ratio at the top of the column, the reflux ratio at the bottom of the column can be calculated as
 
 $$
 S = {V_0 \over B}
