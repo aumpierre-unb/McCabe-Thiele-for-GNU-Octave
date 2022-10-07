@@ -99,7 +99,7 @@ $$
 y_n = {R \over R+1}x_{n+1} + {x_D \over {R+1}}
 $$
 
-Notice that *y*<sub>*n*+1</sub> = *x*<sub>*D*</sub> for *x*<sub>*n*</sub> = *x*<sub>*D*</sub> as well, where *x*<sub>*B*</sub> is the column's bottom product composition.
+Notice that *y*<sub>*n*</sub> = *x*<sub>*D*</sub> for *x*<sub>*n+1*</sub> = *x*<sub>*D*</sub> as well, where *x*<sub>*B*</sub> is the column's bottom product composition.
 
 One can apply the very same procedure to find the operation line for the stripping section based on the reflux ratio at the bottom of the column, and find that *y*<sub>*n*+1</sub> = *x*<sub>*B*</sub> for *x*<sub>*n*</sub> = *x*<sub>*B*</sub> and that both operation lines and the feed line have a common interception.
 
