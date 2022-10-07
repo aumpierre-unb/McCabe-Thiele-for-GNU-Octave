@@ -71,6 +71,8 @@ $$
 V_{n-1}\ y_{n-1} - L_n\ x_n = V_n\ y_n - L_{n+1}\ x_{n+1}
 $$
 
+where *L*<sub>*n*+1</sub> and *V*<sub>*n*</sub> are the liquid and the vapor streams, and *x*<sub>*n*+1</sub> and *y*<sub>*n*</sub> are compositions of those streams, respectively.
+
 As this is true for any stage in its section, then the material stream is constant in the section. For the last theoretical stage *N* (the top of the column), the global material balance is given by
 
 $$
@@ -83,6 +85,8 @@ $$
 D\ x_D = V_n\ y_n - L_{n+1}\ x_{n+1}
 $$
 
+where *D* and *x*<sub>*D*</sub> are the distillate stream and its composition.
+
 The ratio between the distillate *D* and the refluxing current *L*<sub>*N*+1</sub> is the reflux ratio at the top of the column,
 
 $$
@@ -92,10 +96,10 @@ $$
 Now, introducing the reflux ratio in the specific material balance of the rectifying section, we have
 
 $$
-y_n = {R \over R+1}x_{n+1} + {x_F \over {R+1}}
+y_n = {R \over R+1}x_{n+1} + {x_D \over {R+1}}
 $$
 
-Notice that *y*<sub>*n*+1</sub> = *x*<sub>*D*</sub> for *x*<sub>*n*</sub> = *x*<sub>*D*</sub> as well.
+Notice that *y*<sub>*n*+1</sub> = *x*<sub>*D*</sub> for *x*<sub>*n*</sub> = *x*<sub>*D*</sub> as well, where *x*<sub>*B*</sub> is the column's bottom product composition.
 
 One can apply the very same procedure to find the operation line for the stripping section based on the reflux ratio at the bottom of the column, and find that *y*<sub>*n*+1</sub> = *x*<sub>*B*</sub> for *x*<sub>*n*</sub> = *x*<sub>*B*</sub> and that both operation lines and the feed line have a common interception.
 
