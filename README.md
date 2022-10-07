@@ -56,7 +56,7 @@ $$
 or
 
 $$
-y_n = {q \over q-1}x_{n+1} + {x_F \over q-1}
+y_n = {q \over q-1}x_{n+1} - {x_F \over q-1}
 $$
 
 ### Operation Lines
