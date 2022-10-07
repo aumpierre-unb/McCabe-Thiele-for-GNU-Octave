@@ -103,9 +103,13 @@ Notice that *y*<sub>*n*+1</sub> = *x*<sub>*D*</sub> for *x*<sub>*n*</sub> = *x*<
 
 One can apply the very same procedure to find the operation line for the stripping section based on the reflux ratio at the bottom of the column, and find that *y*<sub>*n*+1</sub> = *x*<sub>*B*</sub> for *x*<sub>*n*</sub> = *x*<sub>*B*</sub> and that both operation lines and the feed line have a common interception.
 
-It means that, given the compositions of the feed and the top and bottom products, the feed quality and the reflux ratios at the top and the bottom of the column can be calculated provided the other two are given.
+It means that given the compositions of the feed and the products, the feed quality and the reflux ratio at the top of the column, the reflux ratio at the bottom of the column can be calculated,
 
-Given the reflux ratio *R* at the top of the column and the quality of the feed *q*, alongside with the compositions of feed and products and the thermodynamical relation between the compositions in equilibrium, one can calculate the stages of equilibrium of a column using the McCabe-Thiele method.
+$$
+S = {V_0 \over B}
+$$
+
+where *B* = *F* - *D* is the column's bottom product stream. It is also possible to calculate the stages of equilibrium of a column using the McCabe-Thiele method.
 
 ## The `mccabe-thiele` Toolbox
 
