@@ -34,11 +34,11 @@ function [R]=refmin(data,X,q)
     # Examples:
     #
     # # Compute the minimum value of the reflux ratio
-    # # of a distillation column, given
+    # # of a distillation column given
     # # a matrix that relates the liquid fraction and the vapor fraction,
-    # #  the composition of the distillate is 88 %,
-    # #  the composition of the feed is 46 %,
-    # #  the feed quality is 54 %:
+    # # the composition of the distillate is 88 %,
+    # # the composition of the feed is 46 %,
+    # # the feed quality is 54 %:
     # data=[0.  0.;
     #       0.1 0.212;
     #       0.2 0.384;
@@ -55,11 +55,11 @@ function [R]=refmin(data,X,q)
     # r=refmin(data,x,q)
     #
     # # Compute the number of theoretical stages of a distillation column
-    # # from the top of the column, given
+    # # from the top of the column given
     # # the function that compute the vapor fraction given the liquid fraction,
-    # #  the composition of the distillate is 88 %,
-    # #  the composition of the feed is 46 %,
-    # #  the feed is saturated liquid:
+    # # the composition of the distillate is 88 %,
+    # # the composition of the feed is 46 %,
+    # # the feed is saturated liquid:
     # y=@(x) (x.^0.9 .* (1-x).^1.2 + x);
     # x=[0.88 0.46];
     # q=1;

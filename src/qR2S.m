@@ -31,7 +31,7 @@ function [S]=qR2S(X,q,R)
     #
     # Examples:
     #
-    # # Compute the reflux ratio at the bottom of the column, given
+    # # Compute the reflux ratio at the bottom of the column given
     # # the composition of the distillate is 88 %,
     # # the composition of the feed is 46 %,
     # # the composition of the column's bottom product is 11 %,
@@ -42,7 +42,7 @@ function [S]=qR2S(X,q,R)
     # R=2;
     # S=qR2S(x,q,R)
     #
-    # # Compute the reflux ratio at the bottom of the column, given
+    # # Compute the reflux ratio at the bottom of the column given
     # # the composition of the distillate is 88 %,
     # # the composition of the feed is 46 %,
     # # the composition of the column's bottom product is 11 %,
