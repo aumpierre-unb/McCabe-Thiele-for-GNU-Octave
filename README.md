@@ -4,6 +4,10 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/McCabe-Thiele-for-GNU-Octave)
 
+![Illustrative graphical output](https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/pics/downup_matrix.svg "Example of graphical output - from x-y data set, stages from bottom to top")
+
+![Illustrative graphical output](https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/blob/main/pics/updown_satliq.svg "Example of graphical output - from y=f(x) function and saturated liquid feed, stages from top to bottom")
+
 ## Installing and Loading `mccabe-thiele`
 
 ```dotnetcli
