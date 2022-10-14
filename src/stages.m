@@ -23,7 +23,7 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # [N]=stages(data,X,q,R[,updown[,fig]])
     #
     # stages computes the number of theoretical stages
-    #  of a distillation column using the method of McCabe-Thiele, given
+    #  of a distillation column using the method of McCabe-Thiele given
     #  a function y = y(x) that relates the liquid fraction x and the vapor fraction y, or
     #  a x-y matrix of the liquid and the vapor fractions,
     #  the vector of the fractions of the products and the feed,
@@ -40,7 +40,8 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     #
     # Examples:
     #
-    # # Compute the number of theoretical stages of a distillation column
+    # # Compute the number of theoretical stages
+    # # of a distillation column
     # # from the bottom to the top of the column given
     # # a matrix that relates the liquid fraction and the vapor fraction,
     # # the composition of the distillate is 88 %,
@@ -66,7 +67,8 @@ function [N]=stages(data,X,q,R,updown=true,fig=true)
     # R=1.70*r;
     # N=stages(data,x,q,R,false,false)
     #
-    # # Compute the number of theoretical stages of a distillation column
+    # # Compute the number of theoretical stages
+    # # of a distillation column
     # # from the top to the bottom of the column given
     # # the function that compute the vapor fraction given the liquid fraction,
     # # the composition of the distillate is 88 %,

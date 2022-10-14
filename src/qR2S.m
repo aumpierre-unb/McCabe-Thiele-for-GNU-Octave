@@ -22,7 +22,7 @@ function [S]=qR2S(X,q,R)
     #
     # [S]=qR2S(X,q,R)
     #
-    # qR2S computes the reflux ratio at the bottom of the column, given
+    # qR2S computes the reflux ratio at the bottom of the column given
     #  the reflux ratio at the top of the column,
     #  the vector of the fractions of the products and the feed, and
     #  the feed quality.
