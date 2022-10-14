@@ -27,7 +27,7 @@ For citation of the last released version of `mccabe-thiele`, please check CITAT
 
 ---
 
-The following is a very short introduction to the `mccabe-thiele` Toolbox for GNU Octave.
+The following is a very short introduction to the `mccabe-thiele` toolbox for GNU Octave.
 
 This text is divided in two main sections: The Theory and The `mccabe-thiele` Toolbox.
 
@@ -43,15 +43,15 @@ Distillation is a unit operation based on the difference of volatility to separa
 
 Typically, continuous distillation is performed in a vertical column fed at its intermediate section while products at its top and bottom are recovered. As a rule of thumb, the higher the column, the higher the number of stages of equilibrium and the best is the separations of the components of the mixture fed.
 
-The McCabe-Thiele method is a simplifyied method to calculate the number of stages of equilibrium of a distillation column fo a two component mixture.
+The McCabe-Thiele method is a simplified method to calculate the number of stages of equilibrium of a distillation column fo a two component mixture.
 
 ### Stages of Equilibrium
 
-An equilibrium stage is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operatations are based on the concept of satge of equilibrium.
+An equilibrium stage is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operations are based on the concept of stage of equilibrium.
 
 ### The Feed Line
 
-Idealy, the feed current separates into a liquid stream *q* and a vapor stream 1-*q*, where *q* is the liquid fraction of the feed. If *x*<sub>*n*+1</sub>, *y*<sub>*n*</sub> and *x*<sub>*F*</sub> are the compositions of the liquid and the vapor streams at the feed inlet and the composition of the feed, respectively, then the material balance is
+Ideally, the feed current separates into a liquid stream *q* and a vapor stream 1-*q*, where *q* is the liquid fraction of the feed. If *x*<sub>*n*+1</sub>, *y*<sub>*n*</sub> and *x*<sub>*F*</sub> are the compositions of the liquid and the vapor streams at the feed inlet and the composition of the feed, respectively, then the material balance is
 
 $$
 (1 - q)\ y_n + q\ x_{n+1} = x_F
@@ -126,9 +126,11 @@ where *B* = *F* - *D* is the column's bottom product stream. It is also possible
 ### `stages`
 
 `stages` computes the number of theoretical stages
-of a distillation column using the method of McCabe-Thiele, given
-a function *y* = *y*(*x*) that relates the liquid fraction *x* and the vapor fraction *y*, or
-a *x*-*y* matrix of the liquid and the vapor fractions,
+of a distillation column
+using the method of McCabe-Thiele given
+a function *y* = *y*(*x*) that relates
+the liquid fraction *x* and the vapor fraction *y*,
+or a *x*-*y* matrix of the liquid and the vapor fractions,
 the vector of the fractions of the products and the feed,
 the feed quality, and
 the reflux ratio at the top of the column.
@@ -206,9 +208,11 @@ N=stages(y,x,q,R)
 ### `refmin`
 
 `refmin` computes the minimum value of the reflux ratio
-of a distillation column, given
-a function *y* = *y*(*x*) that relates the liquid fraction *x* and the vapor fraction *y*, or
-a *x*-*y* matrix of the liquid and the vapor fractions,
+of a distillation column
+using the method of McCabe-Thiele given
+a function *y* = *y*(*x*) that relates
+the liquid fraction *x* and the vapor fraction *y*,
+or a *x*-*y* matrix of the liquid and the vapor fractions,
 the vector of the fractions of the distillate and the feed, and
 the feed quality.
 
@@ -263,7 +267,9 @@ r=refmin(y,x,q)
 
 ### `qR2S`
 
-`qR2S` computes the reflux ratio at the bottom of the column, given
+`qR2S` computes the reflux ratio at the bottom
+of a distillation column
+using the method of McCabe-Thiele given
 the reflux ratio at the top of the column,
 the vector of the fractions of the products and the feed, and
 the feed quality.
