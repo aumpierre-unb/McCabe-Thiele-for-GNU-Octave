@@ -1,4 +1,4 @@
-# mccabe-thiele is a package of functions for the method of McCabe-Thiele.
+# mccabe-thiele is a package of functions for the McCabe-Thiele method.
 toolbox >> McCabe-Thiele
 Functions
  stages refmin qR2S
