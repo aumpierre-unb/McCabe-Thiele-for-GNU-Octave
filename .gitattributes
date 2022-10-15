@@ -1,3 +1,1 @@
-src/stages.m linguist-language=matlab
-src/refmin.m linguist-language=matlab
-src/qR2S.m linguist-language=matlab
+src/*.m linguist-language=matlab
