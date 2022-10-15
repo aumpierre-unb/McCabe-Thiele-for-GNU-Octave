@@ -24,7 +24,7 @@ function [S]=qR2S(X,q,R)
     #
     # qR2S computes the reflux ratio at the bottom
     #  of a distillation column
-    #  using the method of McCabe-Thiele given
+    #  using the McCabe-Thiele method given
     #  the reflux ratio at the top of the column,
     #  the vector of the fractions of the products and the feed, and
     #  the feed quality.

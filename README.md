@@ -43,11 +43,9 @@ Distillation is a unit operation based on the difference of volatility to separa
 
 Typically, continuous distillation is performed in a vertical column fed at its intermediate section while products at its top and bottom are recovered. As a rule of thumb, the higher the column, the higher the number of stages of equilibrium and the best is the separations of the components of the mixture fed.
 
-The McCabe-Thiele method is a simplified method to calculate the number of stages of equilibrium of a distillation column fo a two component mixture.
+### Theoretical Stage of Equilibrium
 
-### Stages of Equilibrium
-
-An equilibrium stage is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operations are based on the concept of stage of equilibrium.
+A theoretical stage of equilibrium is an abstract control volume such that the effluent currents are all in thermodynamic equilibrium. All multistage operations are based on the concept of stage of equilibrium.
 
 ### The Feed Line
 
@@ -65,7 +63,7 @@ $$
 
 ### Operation Lines
 
-The global and specific material balances for any equilibrium stage *n* is given by
+The global and specific material balances for any equilibrium stage *n* are given by
 
 $$
 V_{n-1} - L_n = V_n - L_{n+1}
@@ -75,7 +73,7 @@ $$
 V_{n-1}\ y_{n-1} - L_n\ x_n = V_n\ y_n - L_{n+1}\ x_{n+1}
 $$
 
-where *L*<sub>*n*+1</sub> and *V*<sub>*n*</sub> are the liquid and the vapor streams, and *x*<sub>*n*+1</sub> and *y*<sub>*n*</sub> are compositions of those streams, respectively.
+where *L*<sub>*n*+1</sub> and *V*<sub>*n*</sub> are the liquid and the vapor streams, and *x*<sub>*n*+1</sub> and *y*<sub>*n*</sub> are compositions of liquid and vapor streams, respectively.
 
 As this is true for any stage in its section, then the material stream is constant in the section. For the last theoretical stage *N* (the top of the column), the global material balance is given by
 
@@ -127,7 +125,7 @@ where *B* = *F* - *D* is the column's bottom product stream. It is also possible
 
 `stages` computes the number of theoretical stages
 of a distillation column
-using the method of McCabe-Thiele given
+using the McCabe-Thiele method given
 a function *y* = *y*(*x*) that relates
 the liquid fraction *x* and the vapor fraction *y*,
 or a *x*-*y* matrix of the liquid and the vapor fractions,
@@ -144,7 +142,7 @@ from the stripping section to the rectifying section, *updown* = *true*.
 If *updown* = *false* is given, theoretical stages are computed
 from the rectifying section to the stripping section.
 
-By default, stages plots a schematic diagram of the solution, *fig* = *true*.
+By default, `stages` plots a schematic diagram of the solution, *fig* = *true*.
 
 If *fig* = *false* is given, no plot is shown.
 
@@ -209,7 +207,7 @@ N=stages(y,x,q,R)
 
 `refmin` computes the minimum value of the reflux ratio
 of a distillation column
-using the method of McCabe-Thiele given
+using the McCabe-Thiele method given
 a function *y* = *y*(*x*) that relates
 the liquid fraction *x* and the vapor fraction *y*,
 or a *x*-*y* matrix of the liquid and the vapor fractions,
@@ -269,7 +267,7 @@ r=refmin(y,x,q)
 
 `qR2S` computes the reflux ratio at the bottom
 of a distillation column
-using the method of McCabe-Thiele given
+using the McCabe-Thiele method given
 the reflux ratio at the top of the column,
 the vector of the fractions of the products and the feed, and
 the feed quality.
