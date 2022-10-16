@@ -307,7 +307,7 @@ the composition of the column's bottom product is 11 %,
 the feed is saturated liquid, and
 the reflux ratio R at the top of the column is 2:
 
-## See also:
+### See also:
 
 [Ponchon-Savarit-for-GNU-Octave](https://github.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave),
 [Internal-Fluid-Flow-for-GNU-Octave](https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave),
