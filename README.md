@@ -314,7 +314,7 @@ R=2;
 S=qR2S(R,x,q)
 ```
 
-### See also:
+### See Also
 
 [Ponchon-Savarit-for-GNU-Octave](https://github.com/aumpierre-unb/Ponchon-Savarit-for-GNU-Octave),
 [Internal-Fluid-Flow-for-GNU-Octave](https://github.com/aumpierre-unb/Internal-Fluid-Flow-for-GNU-Octave).
