@@ -1,7 +1,7 @@
 TODO
 ====
 
-mccabe-thiele 0.1.4-alpha (2022-10-14)
+mccabe-thiele 0.1.4 (2022-10-22)
 ======================================
 * .m files eol CRLF to LF
 * Minor changes on documentation
