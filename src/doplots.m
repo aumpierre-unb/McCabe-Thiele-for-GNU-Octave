@@ -18,14 +18,22 @@
 # It is also available at https://www.gnu.org/licenses/.
 
 function doplots(dots,updown,f,x,y,data,X,q,R)
+    # Syntax:
+    #
+    # doplots(dots,updown,f,x,y,data,X,q,R)
+    #
+    # doplots produces a x-y diagram with
+    #  a representations of the theoretical stages of equilibrium
+    #  computed for a distillation column using the
+    #  McCabe-Thiele method.
+    # doplots is an auxiliary function of
+    #  the mccabe-thiele toolbox.
     xD=X(1);
     xF=X(2);
     xB=X(3);
     xi=X(4);
     yi=X(5);
-
     figure;
-
     if dots
         X=data(:,1);
         Y=data(:,2);
@@ -35,31 +43,25 @@ function doplots(dots,updown,f,x,y,data,X,q,R)
         Y=f(X);
         plot(X,Y,'k');
     end
-
     X=[0;1];
     Y=X;
     hold on;plot(X,Y,'--k');
-
     Y=R/(1+R)*X+xD/(1+R);
     hold on;plot(X,Y,'b')
     hold on;plot([xD xD],[0 1],'--b');
-
     Y=(xB-yi)/(xB-xi)*(X-xi)+yi;
     hold on;plot(X,Y,'r');
     hold on;plot([xB xB],[0 1],'--r');
-
     if q~=1-1e-10
         Y=q/(q-1)*X-xF/(q-1);
         hold on;plot(X,Y,'m');
     end
     hold on;plot([xF xF],[0 1],'--m');
-
     if updown
         hold on;stairs(x,y,'c');
     else
         hold on;stairs(flip(x),flip(y),'c');
     end
-
     xlabel('{\itx}');
     ylabel('{\ity}');
     axis([0 1 0 1]);

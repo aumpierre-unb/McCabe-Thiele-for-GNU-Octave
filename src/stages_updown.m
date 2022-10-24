@@ -18,6 +18,17 @@
 # It is also available at https://www.gnu.org/licenses/.
 
 function [N,x,y]=stages_updown(f,X,R)
+    # Syntax:
+    #
+    # [N,x,y]=stages_updown(f,X,R)
+    #
+    # stages_updown computes the number of
+    #  theoretical stages of equilibrium of
+    #  a distillation column using the
+    #  McCabe-Thiele method, strating from
+    #  the top to the bottom of the column.
+    # stages_updown is an auxiliary function of
+    #  the mccabe-thiele toolbox.
     xD=X(1);
     xF=X(2);
     xB=X(3);
