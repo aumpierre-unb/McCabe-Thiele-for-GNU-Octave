@@ -1,6 +1,10 @@
 TODO
 ====
 
+mccabe-thiele 0.1.5-alpha (2022-10-24)
+======================================
+* Help comments included for internal functions
+
 mccabe-thiele 0.1.4 (2022-10-21)
 ======================================
 * Minor changes on functions
