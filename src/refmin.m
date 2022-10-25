@@ -1,12 +1,12 @@
 # Copyright (C) 2022 Alexandre Umpierre
 #
-# This file is part of mccabe-thiele toolbox.
-# mccabe-thiele toolbox is free software:
+# This file is part of mccabe-thiele toolbox for GNU Octave.
+# mccabe-thiele toolbox for GNU Octave is free software:
 # you can redistribute it and/or modify it under the terms
 # of the GNU General Public License (GPL) version 3
 # as published by the Free Software Foundation.
 #
-# mccabe-thiele toolbox is distributed in the hope
+# mccabe-thiele toolbox for GNU Octave is distributed in the hope
 # that it will be useful, but WITHOUT ANY WARRANTY;
 # without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -31,6 +31,8 @@ function [R]=refmin(data,X,q)
     #  the feed quality.
     # If feed is a saturated liquid, feed quality q = 1,
     #  feed quality is reset to q = 1 - 1e-10.
+    # refmin is a main function of
+    #  the mccabe-thiele toolbox for GNU Octave.
     #
     # Examples:
     #

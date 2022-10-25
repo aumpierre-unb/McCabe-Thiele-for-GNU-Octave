@@ -1,12 +1,12 @@
 # Copyright (C) 2022 Alexandre Umpierre
 #
-# This file is part of mccabe-thiele toolbox.
-# mccabe-thiele toolbox is free software:
+# This file is part of mccabe-thiele toolbox for GNU Octave.
+# mccabe-thiele toolbox for GNU Octave is free software:
 # you can redistribute it and/or modify it under the terms
 # of the GNU General Public License (GPL) version 3
 # as published by the Free Software Foundation.
 #
-# mccabe-thiele toolbox is distributed in the hope
+# mccabe-thiele toolbox for GNU Octave is distributed in the hope
 # that it will be useful, but WITHOUT ANY WARRANTY;
 # without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -24,9 +24,9 @@ function [x2]=bissection(f,x1,x2)
     #
     # bissection computes the root of
     #  a function using the method of bissection
-    #  given it is between the guess values.
+    #  given it is found between the guess values.
     # bissection is an auxiliary function of
-    #  the mccabe-thiele toolbox.
+    #  the mccabe-thiele toolbox for GNU Octave.
     while abs(f(x2))>1e-4
         x=(x1+x2)/2;
         if f(x)*f(x1)>0

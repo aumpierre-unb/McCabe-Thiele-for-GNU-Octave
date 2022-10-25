@@ -1,12 +1,12 @@
 # Copyright (C) 2022 Alexandre Umpierre
 #
-# This file is part of mccabe-thiele toolbox.
-# mccabe-thiele toolbox is free software:
+# This file is part of mccabe-thiele toolbox for GNU Octave.
+# mccabe-thiele toolbox for GNU Octave is free software:
 # you can redistribute it and/or modify it under the terms
 # of the GNU General Public License (GPL) version 3
 # as published by the Free Software Foundation.
 #
-# mccabe-thiele toolbox is distributed in the hope
+# mccabe-thiele toolbox for GNU Octave is distributed in the hope
 # that it will be useful, but WITHOUT ANY WARRANTY;
 # without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -28,7 +28,7 @@ function [N,x,y]=stages_downup(f,X,R)
     #  McCabe-Thiele method, strating from
     #  the bottom to the top of the column.
     # stages_downup is an auxiliary function of
-    #  the mccabe-thiele toolbox.
+    #  the mccabe-thiele toolbox for GNU Octave.
     xD=X(1);
     xF=X(2);
     xB=X(3);

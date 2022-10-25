@@ -1,12 +1,12 @@
 # Copyright (C) 2022 Alexandre Umpierre
 #
-# This file is part of mccabe-thiele toolbox.
-# mccabe-thiele toolbox is free software:
+# This file is part of mccabe-thiele toolbox for GNU Octave.
+# mccabe-thiele toolbox for GNU Octave is free software:
 # you can redistribute it and/or modify it under the terms
 # of the GNU General Public License (GPL) version 3
 # as published by the Free Software Foundation.
 #
-# mccabe-thiele toolbox is distributed in the hope
+# mccabe-thiele toolbox for GNU Octave is distributed in the hope
 # that it will be useful, but WITHOUT ANY WARRANTY;
 # without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -30,6 +30,8 @@ function [S]=qR2S(X,q,R)
     #  the feed quality.
     # If feed is a saturated liquid, feed quality q = 1,
     #  feed quality is reset to q = 1 - 1e-10.
+    # qR2S is a main function of
+    #  the mccabe-thiele toolbox for GNU Octave.
     #
     # Examples:
     #
@@ -38,7 +40,7 @@ function [S]=qR2S(X,q,R)
     # # the composition of the feed is 46 %,
     # # the composition of the column's bottom product is 11 %,
     # # the feed quality is 54 %, and
-    # # the reflux ratio R at the top of the column is 2.
+    # # the reflux ratio R at the top of the column is 2:
     # x=[0.88 0.46 0.11];
     # q=0.54;
     # R=2;
@@ -49,7 +51,7 @@ function [S]=qR2S(X,q,R)
     # # the composition of the feed is 46 %,
     # # the composition of the column's bottom product is 11 %,
     # # the feed is saturated liquid, and
-    # # the reflux ratio R at the top of the column is 2.
+    # # the reflux ratio R at the top of the column is 2:
     # x=[0.88 0.46 0.11];
     # q=1;
     # R=2;
