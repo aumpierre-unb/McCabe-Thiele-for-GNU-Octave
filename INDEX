@@ -1,4 +1,4 @@
-# mccabe-thiele is a package of functions for the McCabe-Thiele method.
+# mccabe-thiele is a toolbox for the McCabe-Thiele method for GNU Octave.
 toolbox >> McCabe-Thiele
 Functions
  stages refmin qR2S
