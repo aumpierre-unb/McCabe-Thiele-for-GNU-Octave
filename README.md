@@ -12,6 +12,7 @@
 # use this call to install version 0.1.2, or modify the command line for match the version
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.2.tar.gz
 pkg load mccabe-thiele
+pkg update mccabe-thiele
 ```
 
 ## Citation of `mccabe-thiele`
