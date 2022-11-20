@@ -149,7 +149,7 @@ If *fig* = *false* is given, no plot is shown.
 **Syntax:**
 
 ```dotnetcli
-[N]=stages(y,X,q,R[,updown[,fig]])
+[N]=stages(y,X,q,R[,updown[,fig=true]])
 ```
 
 **Examples:**

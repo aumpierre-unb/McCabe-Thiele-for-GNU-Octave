@@ -20,7 +20,7 @@
 function [N]=stages(data,X,q,R,updown=true,fig=true)
     # Syntax:
     #
-    # [N]=stages(data,X,q,R[,updown[,fig]])
+    # [N]=stages(data,X,q,R[,updown[,fig=true]])
     #
     # stages computes the number of theoretical stages
     #  of a distillation column
