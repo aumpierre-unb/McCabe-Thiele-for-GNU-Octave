@@ -37,30 +37,30 @@ function doplots(dots,updown,f,x,y,data,X,q,R)
     if dots
         X=data(:,1);
         Y=data(:,2);
-        plot(X,Y,'-ok');
+        plot(X,Y,'-ok','linewidth',1.2);
     else
         X=linspace(0,1,101);
         Y=f(X);
-        plot(X,Y,'k');
+        plot(X,Y,'k','linewidth',1.2);
     end
     X=[0;1];
     Y=X;
     hold on;plot(X,Y,'--k');
     Y=R/(1+R)*X+xD/(1+R);
-    hold on;plot(X,Y,'b')
+    hold on;plot(X,Y,'-.b','linewidth',1.2)
     hold on;plot([xD xD],[0 1],'--b');
     Y=(xB-yi)/(xB-xi)*(X-xi)+yi;
-    hold on;plot(X,Y,'r');
+    hold on;plot(X,Y,'-.r','linewidth',1.2);
     hold on;plot([xB xB],[0 1],'--r');
     if q~=1-1e-10
         Y=q/(q-1)*X-xF/(q-1);
-        hold on;plot(X,Y,'m');
+        hold on;plot(X,Y,'-.m','linewidth',1.2);
     end
     hold on;plot([xF xF],[0 1],'--m');
     if updown
-        hold on;stairs(x,y,'c');
+        hold on;stairs(x,y,'g');
     else
-        hold on;stairs(flip(x),flip(y),'c');
+        hold on;stairs(flip(x),flip(y),'g');
     end
     xlabel('{\itx}');
     ylabel('{\ity}');
