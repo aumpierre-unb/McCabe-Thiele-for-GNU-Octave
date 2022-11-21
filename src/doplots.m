@@ -66,5 +66,5 @@ function doplots(dots,updown,f,x,y,data,X,q,R)
     ylabel('{\ity}');
     axis([0 1 0 1]);
     grid on;
-    set(gca,'fontsize',16);
+    set(gca,'fontsize',14);
 end
