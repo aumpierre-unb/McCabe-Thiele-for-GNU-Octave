@@ -9,10 +9,8 @@
 ## Installing and Loading `mccabe-thiele`
 
 ```dotnetcli
-# this call installs version 0.1.0 and updates to the latest version
-pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.0.tar.gz
-pkg load mccabe-thiele
-pkg update mccabe-thiele
+# e.g. this call installs version 0.1.5
+pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.5.tar.gz
 ```
 
 ## Citation of `mccabe-thiele`
