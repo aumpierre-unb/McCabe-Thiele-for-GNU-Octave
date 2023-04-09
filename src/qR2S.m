@@ -1,4 +1,4 @@
-#  Copyright (C) 2022 2023 Alexandre Umpierre
+# Copyright (C) 2022 2023 Alexandre Umpierre
 #
 # This file is part of mccabe-thiele toolbox for GNU Octave.
 # mccabe-thiele toolbox for GNU Octave is free software:
