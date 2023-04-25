@@ -11,6 +11,7 @@
 ```dotnetcli
 # e.g. this call installs version 0.1.5
 pkg install https://github.com/aumpierre-unb/McCabe-Thiele-for-GNU-Octave/archive/refs/tags/v0.1.5.tar.gz
+pkg load mccabe-thiele
 ```
 
 ## Citation of `mccabe-thiele`
