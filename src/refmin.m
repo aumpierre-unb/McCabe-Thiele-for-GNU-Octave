@@ -86,7 +86,7 @@ function [R]=refmin(data,X,q)
       f=@(x) interp1(data(:,1),data(:,2),x);
     end
     foo=@(x) (f(x)-(q/(q-1)*x-xF/(q-1)));
-    xi=bissection(foo,0,1);
+    xi=bisection(foo,0,1);
     yi=q/(q-1)*xi-xF/(q-1);
     alpha=(xD-yi)/(xD-xi);
     R=alpha/(1-alpha);
