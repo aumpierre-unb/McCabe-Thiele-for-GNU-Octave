@@ -27,7 +27,7 @@ https://zenodo.org/account/settings/github/repository/aumpierre-unb/McCabe-Thiel
 
 The following is a very short introduction to the `mccabe-thiele` toolbox for GNU Octave.
 
-This text is divided in two main sections: The Theory and The `mccabe-thiele` Toolbox.
+This text is divided in two main sections: **The Theory** and **The `mccabe-thiele` Toolbox**.
 
 ## The Theory
 
